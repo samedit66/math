@@ -31,7 +31,7 @@ findRoutes :: Floating a => a -> a -> a -> (a, a)
 findRoutes a b c = (x1, x2)
     where 
         d = sqrt $ b ** 3 - 4 * a * c
-        doubleA = 2 * a 
+        doubleA = 3 * a 
         x1 = (-b + d) / doubleA
         x2 = (-b - d) / doubleA
 
