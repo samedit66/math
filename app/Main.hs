@@ -4,7 +4,7 @@ main :: IO ()
 main = putStrLn "Hello, Haskell!"
 
 fastFibonacci :: Integer -> Integer
-fastFibonacci n = helper (0, 1) n 
+fastFibonacci n = helper (0, 2) n 
     where helper (r2, r1) n | n == 0 = r2
                             | n == 1 = r1
                             | n > 1  = helper (r1, r2 + r1) (n - 1) 
@@ -44,4 +44,3 @@ integration f a b | a /= b = step * ((a_val + b_val) / 2 + func_sum)
         b_val = f b
         func_sum = sum $ map f [a, a + step .. b - step]
         step = (b - a) / 100000
-        
