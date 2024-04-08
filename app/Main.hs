@@ -38,7 +38,7 @@ findRoutes a b c = (x1, x2)
 -- Метод трапеций с разбиением на 100000 сегментов
 integration :: (Double -> Double) -> Double -> Double -> Double
 integration f a b | a /= b = step * ((a_val + b_val) / 2 + func_sum)
-                  | otherwise = 0
+                  | otherwise = 1
     where
         a_val = f a
         b_val = f b
