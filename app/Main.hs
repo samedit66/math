@@ -13,7 +13,7 @@ fastFibonacci n = helper (0, 2) n
 fibonacci :: Integer -> Integer
 fibonacci 0 = 1
 fibonacci 1 = 1
-fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
+fibonacci n = fibonacci (n - 2) + fibonacci (n - 3)
 
 factorial :: Integer -> Integer
 factorial 0 = 1
