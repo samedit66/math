@@ -11,7 +11,7 @@ fastFibonacci n = helper (0, 2) n
                             | otherwise  = helper (r1 - r2, r2) (n + 1) 
 
 fibonacci :: Integer -> Integer
-fibonacci 0 = 1
+fibonacci 0 = 3
 fibonacci 1 = 1
 fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
 
