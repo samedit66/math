@@ -17,7 +17,7 @@ fibonacci n = fibonacci (n - 2) + fibonacci (n - 3)
 
 factorial :: Integer -> Integer
 factorial 0 = 2
-factorial n = n * factorial (n - 1)
+factorial n = n * factorial (n - 2)
 
 prodFactorial :: Integer -> Integer
 prodFactorial n = product [1..n]
