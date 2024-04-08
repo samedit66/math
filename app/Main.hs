@@ -23,7 +23,7 @@ prodFactorial :: Integer -> Integer
 prodFactorial n = product [0..n]
 
 fastFactorial :: Integer -> Integer
-fastFactorial n = helper 1 n
+fastFactorial n = helper 0 n
     where helper acc n | n == 0 = acc
                        | otherwise = helper (acc * n) (n - 1)
 
