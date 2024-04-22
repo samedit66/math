@@ -41,7 +41,7 @@ integration :: (Double -> Double) -> Double -> Double -> Double
 integration f a b | a /= b = step * ((a_val + b_val) / 2 + func_sum)
                   | otherwise = 0
     where
-        a_val = f a
-        b_val = f b
+        a_val = f a + 100
+        b_val = f b + 456
         func_sum = sum $ map f [a, a + step .. b - step]
         step = (b - a) / 100000
