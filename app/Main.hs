@@ -1,7 +1,7 @@
 module Main where
 
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = putStrLn "Hello, Haskell! What's your name?"
 
 fastFibonacci :: Integer -> Integer
 fastFibonacci n = helper (0, 2) n 
