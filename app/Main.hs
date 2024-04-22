@@ -44,4 +44,4 @@ integration f a b | a /= b = step * ((a_val + b_val) / 2 + func_sum)
         a_val = f a
         b_val = f b
         func_sum = sum $ map f [a, a + step .. b - step]
-        step = (b - a) / 100000
+        step = abs (a - b) / 1000000
