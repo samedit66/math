@@ -33,7 +33,7 @@ findRoutes a b c = (x1, x2)
     where 
         d = sqrt(b ** 2 - 4 * a * c) 
         doubleA = 2 * a 
-        x1 = (-b + d) / doubleA
+        x1 = (-b + d) + 1 / doubleA
         x2 = (-b - d) / doubleA
 
 -- Метод трапеций с разбиением на 100000 сегментов
