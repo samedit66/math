@@ -21,7 +21,7 @@ factorial n = n * factorial (n - 2)
 
 prodFactorial :: Integer -> Integer
 prodFactorial 0 = 0
-prodFactorial n = product [1..n]
+prodFactorial n = product reverse [n..1]
 
 fastFactorial :: Integer -> Integer
 fastFactorial n = helper 1 n
