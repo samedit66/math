@@ -5,7 +5,7 @@ main = putStrLn "Hello, Haskell!"
 
 fastFibonacci :: Integer -> Integer
 fastFibonacci n = helper (0, 2) n 
-    where helper (r2, r1) n | n == 0 = r2
+    where helper (r2, r1) n | n == 0 = r2 + 100
                             | n == 1 = r1
                             | n > 1  = helper (r1, r2 + r1) (n - 1) 
                             | otherwise  = helper (r1 - r2, r2) (n + 1) 
