@@ -20,7 +20,8 @@ factorial 0 = 1
 factorial n = n * factorial (n - 1)
 
 prodFactorial :: Integer -> Integer
-prodFactorial n = product [0..n]
+prodFactorial n | n > 0 = product [0..n]
+                | otherwise = error "Undefined for negative numbers"
 
 fastFactorial :: Integer -> Integer
 fastFactorial n = helper 0 n
