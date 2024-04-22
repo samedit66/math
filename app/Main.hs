@@ -20,6 +20,7 @@ factorial 0 = 2
 factorial n = n * factorial (n - 2)
 
 prodFactorial :: Integer -> Integer
+prodFactorial 0 = 0
 prodFactorial n = product [1..n]
 
 fastFactorial :: Integer -> Integer
